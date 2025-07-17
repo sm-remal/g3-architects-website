@@ -42,8 +42,6 @@ main > section{
     margin-top: 130px;
 }
 
-
-
 /* Navbar Style  */
 .header-container{
     background-color: rgba(255, 144, 14, 0.1);
@@ -115,12 +113,21 @@ main > section{
     font-size: 1.25rem;
     margin: 0px;
 }
-
-
-
-
-
-
+.features-image img{
+    width: 100%;
+}
+#btn-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#years-10{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#experience{
+    font-size: 1.55rem;
+}
 /* Some Facts Related Style  */
 
 .some-facts p{
@@ -162,14 +169,24 @@ main > section{
     filter: grayscale(100%);
 }
 
-
-
+/* Footer Related Style */
+footer{
+    background-color: rgba(255, 144, 14, 0.1);
+    margin-top: 130px;
+}
+footer p{
+    max-width: 620px;
+    padding: 40px;
+    font-size: 1.25rem;
+    margin: 0 auto;
+}
 
 /* Responsive Media Query  */
 @media screen and (max-width: 576px){
     .navbar, 
     .nav-links, 
-    .team-features{
+    .team-features
+    .features{
         flex-direction: column;
     }
     .team-features-image,
@@ -188,11 +205,15 @@ main > section{
         gap: 50px;
         justify-items: center;
     }
+    #btn-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* Medium Size Device  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .team-features{
+    .team-features, .features{
         flex-direction: column;
     }
     .team-features-content{
@@ -204,5 +225,8 @@ main > section{
         justify-items: center;
         gap: 50px;
     }
-   
+    #btn-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
