@@ -185,7 +185,7 @@ footer p{
 @media screen and (max-width: 576px){
     .navbar, 
     .nav-links, 
-    .team-features
+    .team-features,
     .features{
         flex-direction: column;
     }
